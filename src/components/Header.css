@@ -112,8 +112,8 @@
   padding-right: 13px;
 }
 
-.orders-link.active{
-  /* text-decoration: underline; */
+.orders-link.active {
+  text-decoration: underline;
 }
 
 .header .orders-text {
