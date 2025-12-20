@@ -1,4 +1,5 @@
 import { Header } from '../components/Header';
+import { Link } from 'react-router';
 import './Orders.css';
 
 export function Orders() {
@@ -54,11 +55,11 @@ export function Orders() {
                             </div>
 
                             <div className="product-actions">
-                                <a href="/tracking">
+                                <Link href="/tracking">
                                     <button className="track-package-button button-secondary">
                                         Track package
                                     </button>
-                                </a>
+                                </Link>
                             </div>
 
                             <div className="product-image-container">
@@ -82,11 +83,11 @@ export function Orders() {
                             </div>
 
                             <div className="product-actions">
-                                <a href="/tracking">
+                                <Link href="/tracking">
                                     <button className="track-package-button button-secondary">
                                         Track package
                                     </button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -133,11 +134,11 @@ export function Orders() {
                             </div>
 
                             <div className="product-actions">
-                                <a href="/tracking">
+                                <Link href="/tracking">
                                     <button className="track-package-button button-secondary">
                                         Track package
                                     </button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
