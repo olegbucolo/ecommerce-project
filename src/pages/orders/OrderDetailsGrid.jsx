@@ -1,8 +1,8 @@
-import {Link} from 'react-router';
-import {Fragment} from 'react';
+import { Link } from 'react-router';
+import { Fragment } from 'react';
 import dayjs from 'dayjs';
 
-export function OrderDetailsGrid({order}) {
+export function OrderDetailsGrid({ order }) {
     return (
         <div className="order-details-grid">
             {order.products.map((orderProduct) => {
@@ -29,17 +29,17 @@ export function OrderDetailsGrid({order}) {
                         </div>
 
                         <div className="product-actions">
-                            <Link href="/tracking">
-                                <button className="track-package-button button-secondary">
-                                    Track package
-                                </button>
-                            </Link>
-                        </div>
+                            <Link to={`/tracking/${order.id}/${orderProduct.productId}`}>
+                            <button className="track-package-button button-secondary">
+                                Track package
+                            </button>
+                        </Link>
+                    </div>
 
                     </Fragment>
-                );
-            })}
+    );
+})}
 
-        </div>
+        </div >
     )
 }
