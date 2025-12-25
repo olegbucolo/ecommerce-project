@@ -17,12 +17,13 @@ export function Tracking({ cart }) {
             setOrder(response.data);
         }
         fetchAtOrderId();
-        
+
     }, [orderId])
     if (!order) { return null };
     let currProduct = order.products.find(p => p.productId === productId);
-    console.log('currProduct right',currProduct)
-
+    console.log('estimatedDelivery', currProduct.estimatedDeliveryTimeMs)
+    console.log('quantity', currProduct.quantity)
+    
     return (
         <>
             <link rel="icon" type="image/svg+xml" href="/tracking-favicon.png" />
