@@ -2,7 +2,7 @@ import axios from 'axios';
 import dayjs from 'dayjs';
 import { formatMoney } from '../../utils/money';
 
-export function DeliveryOptions({deliveryOptions, cartItem, loadCart}) {
+export function DeliveryOptions({ deliveryOptions, cartItem, loadCart }) {
     return (
         <div className="delivery-options">
             <div className="delivery-options-title">
@@ -24,10 +24,11 @@ export function DeliveryOptions({deliveryOptions, cartItem, loadCart}) {
                 }
 
                 return (
-                    <div key={deliveryOption.id} className="delivery-option" onClick={updateDeliveryOption}>
+                    <div key={deliveryOption.id} className="delivery-option"
+                        onClick={updateDeliveryOption}>
                         <input type="radio"
                             checked={deliveryOption.id === cartItem.deliveryOptionId}
-                            onChange={()=>{}}
+                            onChange={() => { }}
                             className="delivery-option-input"
                             name={`delivery-option-${cartItem.productId}`} />
                         <div>
